@@ -42,6 +42,7 @@ if __name__ == "__main__":
 
     result = parse_cli_args()
 
+    # check validity of return value of fetch query
     if result:
         api_key, search_id, target_precision, query = result
         fetch_q = FetchQ(api_key=api_key, search_id=search_id,
